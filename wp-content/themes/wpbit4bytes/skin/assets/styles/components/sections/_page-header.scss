@@ -1,0 +1,60 @@
+.page-header{
+
+    
+
+
+    &__container{
+        @include site-container();
+        @include section-spacing('top');
+        @include section-spacing('bottom');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        @include media(desktop large){
+            min-height: 600px; 
+        }
+    }
+
+    &__content-wrap{
+        @extend %section-indented;
+        @include media(desktop large){
+            width: 864px;
+        }
+        
+    }
+
+    &__content{
+        @include text-size(large);
+        line-height: 1.2;
+        @include media(desktop large){
+            width: 500px;
+            line-height: 1.5;
+            @include text-size(largest);
+        }
+    }
+    
+    &__image{
+        @extend %bg-image;    
+    }
+
+    &__header{
+     
+        @include media(desktop large){
+          //  width: 500px;
+        }
+    }
+    &__title{
+        margin-top: 0;
+        @include text-size(bigest);
+        font-weight: $base-font-weight-bold;
+        line-height: 1.2;
+        margin-bottom: $base-content-padding+($base-content-padding/2);
+        @include media(desktop large){
+            line-height: 1.2;
+            @include text-size(giant);
+            font-weight: $base-font-weight-bold;
+            
+        }
+    }
+}

@@ -1,0 +1,144 @@
+$acc-border-color: $base-light-grey-color;
+$acc-toggle-color: $base-primary-color;
+
+.accordion{
+    $this: &;
+    &__container{
+
+    }
+
+    &__item{
+        
+    }
+
+    &__item:last-child{
+        #{$this}__header{
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &__item.is-active{
+        #{$this}__content{
+            display: block;
+        }
+    }
+
+    &__header{
+        padding:16px 0; 
+        margin-bottom: 0px;
+        border-bottom: 1px solid $acc-border-color;
+        @include media(desktop large){
+            padding:24px 0; 
+            padding-top:24px; 
+            margin-bottom: 24px;
+        }
+    }
+
+    &__toggle{
+        @include text-size(large);
+        font-weight: $base-font-weight-bold;
+        display: flex;
+        line-height: 1.2;
+        align-items: center;
+        @include media(desktop large){
+            @include text-size(largest);
+        }
+    }
+
+    &__toggle-icon{
+        
+        padding: 0 16px;
+        @include media(desktop large){
+            padding: 0 24px;
+        }
+    }
+    &__toggle-title{
+        flex: 1;
+    }
+
+
+
+    &__content{
+        display: none;
+        overflow: hidden;
+    }
+
+
+    .is-closed {
+        #{$this}__circle-vertical {
+          transition: all 0.5s ease-in-out;
+          transform: rotate(-90deg);
+        }
+        #{$this}__circle-horizontal {
+          transition: all 0.5s ease-in-out;
+          transform: rotate(-90deg);
+          opacity: 1;
+        }
+      }
+      
+      .is-opened {
+        opacity: 1;
+        #{$this}__circle-vertical {
+          transition: all 0.5s ease-in-out;
+          transform: rotate(90deg);
+        }
+        #{$this}__circle-horizontal {
+          transition: all 0.5s ease-in-out;
+          transform: rotate(90deg);
+          opacity: 0;
+        }
+      }
+      
+      &__circle-plus {
+        #{$this}__circle-vertical {
+            transition: all 0.5s ease-in-out;
+            transform: rotate(-90deg);
+          }
+          #{$this}__circle-horizontal {
+            transition: all 0.5s ease-in-out;
+            transform: rotate(-90deg);
+            opacity: 1;
+          }
+      }
+      
+      &__circle {
+          position: relative;   
+      }
+      &__circle-horizontal {
+          position: absolute;
+          background-color: $acc-toggle-color;
+          top: 50%;
+          left: 50%;
+          width: 16px;
+          height: 2px;
+          margin-left: -8px;
+          margin-top: 0px;
+          @include media(desktop large){
+            width: 24px;
+            height: 2px;
+            margin-left: -12px;
+            margin-top: -2px;
+          }
+      }
+      &__circle-vertical {
+          position: absolute;
+          background-color: $acc-toggle-color;
+          top: 50%;
+          left: 50%;
+          width: 2px;
+          height: 16px;
+          margin-left: -1px;
+          margin-top: -7px;
+          @include media(desktop large){
+            width: 4px;
+            height: 24px;
+            margin-left: -2px;
+            margin-top: -12px;
+          }
+      }
+      
+      
+
+}

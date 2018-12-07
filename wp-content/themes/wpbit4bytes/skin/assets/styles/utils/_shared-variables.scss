@@ -1,0 +1,91 @@
+//Base
+$base-font-family: 'Rajdhani', Arial, serif;
+$base-icons-font-family: 'wpbit4bytes';
+
+// Container
+$base-content-padding: 16px;
+$base-content-full-width: 1200px;
+$base-content-width: $base-content-full-width + ($base-content-padding*2);
+
+// Font
+$base-font-weight-light: 400;
+$base-font-weight-normal: 500;
+$base-font-weight-bold: 900;
+
+
+//Typography
+$typography-map: (
+  mobile: (
+    giant:          72px,
+    huge:           42px,
+    biggest:        30px,
+    bigger:         28px,
+    big:            26px,
+    largest:        24px,
+    larger:         22px,
+    large:          20px,
+    default:        16px,
+    medium:         16px,
+    small:          14px,
+    smaller:        12px,
+    tiny:           11px
+  )
+);
+
+// Buttons
+$button-size-map: (
+  mobile: (
+    default: (
+      text-size: 18px,
+      line-height: 1.5,
+      height: 54px,
+    )
+  )
+);
+
+//Section
+$section-spacing-map: (
+  mobile: (
+    default:    40px,
+    medium:     80px,
+    large:      96px,
+    huge:       128px,
+    small:      24px,
+    no-spacing: 0,
+    header:      16px
+  ),
+  desktop: (
+    default:    80px,
+    medium:     80px,
+    large:      96px,
+    huge:       128px,
+    small:      40px,
+    no-spacing: 0,
+    header:      24px
+  ),
+  large: (
+    default:    80px,
+    medium:     80px,
+    large:      96px,
+    huge:       128px,
+    small:      40px,
+    no-spacing: 0,
+    header:      24px
+  )
+);
+
+//WP admin bar
+$wpAdminBar-sm: 782px;
+
+// Forms
+$form-field-spacing: 30px;
+
+// Input
+$input-height-map: (
+  mobile: (
+    default: (
+      text-size: 16px,
+      height: 48px,
+    )
+  )
+);

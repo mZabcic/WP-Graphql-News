@@ -1,0 +1,293 @@
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$b4bicon-telegram: unicode(ea02);
+$b4bicon-telegram-2: unicode(ea03);
+$b4bicon-logo-skype: unicode(ea04);
+$b4bicon-logo-slack: unicode(ea05);
+$b4bicon-logo-whatsapp: unicode(ea06);
+$b4bicon-logo-wechat: unicode(ea07);
+$b4bicon-logo-linkedin: unicode(ea08);
+$b4bicon-logo-github: unicode(ea09);
+$b4bicon-logo-fb-simple: unicode(ea0a);
+$b4bicon-logo-pinterest: unicode(ea0b);
+$b4bicon-logo-paypal: unicode(ea0c);
+$b4bicon-logo-facebook: unicode(ea0d);
+$b4bicon-logo-behance: unicode(ea0e);
+$b4bicon-zoom: unicode(ea0f);
+$b4bicon-search: unicode(ea10);
+$b4bicon-zoom-in: unicode(ea11);
+$b4bicon-zoom-out: unicode(ea12);
+$b4bicon-sort-tool: unicode(ea13);
+$b4bicon-phone-2: unicode(ea14);
+$b4bicon-phone-3: unicode(ea15);
+$b4bicon-telephone: unicode(ea16);
+$b4bicon-pin-3: unicode(ea17);
+$b4bicon-pin-3-2: unicode(ea18);
+$b4bicon-mail: unicode(ea19);
+$b4bicon-mail-2: unicode(ea1a);
+$b4bicon-send: unicode(ea1b);
+$b4bicon-logo-instagram: unicode(ea1c);
+$b4bicon-zoom-100: unicode(ea1d);
+$b4bicon-tail-right: unicode(ea1e);
+$b4bicon-tail-left: unicode(ea1f);
+$b4bicon-tail-triangle-up: unicode(ea20);
+$b4bicon-tail-triangle-right: unicode(ea21);
+$b4bicon-tail-triangle-left: unicode(ea22);
+$b4bicon-tail-triangle-down: unicode(ea23);
+$b4bicon-tail-right-2: unicode(ea24);
+$b4bicon-tail-down: unicode(ea25);
+$b4bicon-tail-left-2: unicode(ea26);
+$b4bicon-stre-down: unicode(ea27);
+$b4bicon-stre-left: unicode(ea28);
+$b4bicon-stre-right: unicode(ea29);
+$b4bicon-stre-up: unicode(ea2a);
+$b4bicon-square-corner-up-right: unicode(ea2b);
+$b4bicon-network-communication: unicode(ea2c);
+$b4bicon-minimal-up: unicode(ea2d);
+$b4bicon-minimal-right: unicode(ea2e);
+$b4bicon-minimal-left: unicode(ea2f);
+$b4bicon-minimal-down: unicode(ea30);
+$b4bicon-cloud-download-93: unicode(ea31);
+$b4bicon-cloud-download-95: unicode(ea32);
+$b4bicon-cloud-refresh: unicode(ea33);
+$b4bicon-cloud-upload-94: unicode(ea34);
+$b4bicon-cloud-upload-96: unicode(ea35);
+$b4bicon-tail-up: unicode(ea36);
+$b4bicon-square-simple-up: unicode(ea37);
+$b4bicon-square-simple-right: unicode(ea38);
+$b4bicon-square-simple-left: unicode(ea39);
+$b4bicon-square-simple-down: unicode(ea3a);
+
+.b4bicon-telegram::before {
+  content: $b4bicon-telegram;
+}
+
+.b4bicon-telegram-2::before {
+  content: $b4bicon-telegram-2;
+}
+
+.b4bicon-logo-skype::before {
+  content: $b4bicon-logo-skype;
+}
+
+.b4bicon-logo-slack::before {
+  content: $b4bicon-logo-slack;
+}
+
+.b4bicon-logo-whatsapp::before {
+  content: $b4bicon-logo-whatsapp;
+}
+
+.b4bicon-logo-wechat::before {
+  content: $b4bicon-logo-wechat;
+}
+
+.b4bicon-logo-linkedin::before {
+  content: $b4bicon-logo-linkedin;
+}
+
+.b4bicon-logo-github::before {
+  content: $b4bicon-logo-github;
+}
+
+.b4bicon-logo-fb-simple::before {
+  content: $b4bicon-logo-fb-simple;
+}
+
+.b4bicon-logo-pinterest::before {
+  content: $b4bicon-logo-pinterest;
+}
+
+.b4bicon-logo-paypal::before {
+  content: $b4bicon-logo-paypal;
+}
+
+.b4bicon-logo-facebook::before {
+  content: $b4bicon-logo-facebook;
+}
+
+.b4bicon-logo-behance::before {
+  content: $b4bicon-logo-behance;
+}
+
+.b4bicon-zoom::before {
+  content: $b4bicon-zoom;
+}
+
+.b4bicon-search::before {
+  content: $b4bicon-search;
+}
+
+.b4bicon-zoom-in::before {
+  content: $b4bicon-zoom-in;
+}
+
+.b4bicon-zoom-out::before {
+  content: $b4bicon-zoom-out;
+}
+
+.b4bicon-sort-tool::before {
+  content: $b4bicon-sort-tool;
+}
+
+.b4bicon-phone-2::before {
+  content: $b4bicon-phone-2;
+}
+
+.b4bicon-phone-3::before {
+  content: $b4bicon-phone-3;
+}
+
+.b4bicon-telephone::before {
+  content: $b4bicon-telephone;
+}
+
+.b4bicon-pin-3::before {
+  content: $b4bicon-pin-3;
+}
+
+.b4bicon-pin-3-2::before {
+  content: $b4bicon-pin-3-2;
+}
+
+.b4bicon-mail::before {
+  content: $b4bicon-mail;
+}
+
+.b4bicon-mail-2::before {
+  content: $b4bicon-mail-2;
+}
+
+.b4bicon-send::before {
+  content: $b4bicon-send;
+}
+
+.b4bicon-logo-instagram::before {
+  content: $b4bicon-logo-instagram;
+}
+
+.b4bicon-zoom-100::before {
+  content: $b4bicon-zoom-100;
+}
+
+.b4bicon-tail-right::before {
+  content: $b4bicon-tail-right;
+}
+
+.b4bicon-tail-left::before {
+  content: $b4bicon-tail-left;
+}
+
+.b4bicon-tail-triangle-up::before {
+  content: $b4bicon-tail-triangle-up;
+}
+
+.b4bicon-tail-triangle-right::before {
+  content: $b4bicon-tail-triangle-right;
+}
+
+.b4bicon-tail-triangle-left::before {
+  content: $b4bicon-tail-triangle-left;
+}
+
+.b4bicon-tail-triangle-down::before {
+  content: $b4bicon-tail-triangle-down;
+}
+
+.b4bicon-tail-right-2::before {
+  content: $b4bicon-tail-right-2;
+}
+
+.b4bicon-tail-down::before {
+  content: $b4bicon-tail-down;
+}
+
+.b4bicon-tail-left-2::before {
+  content: $b4bicon-tail-left-2;
+}
+
+.b4bicon-stre-down::before {
+  content: $b4bicon-stre-down;
+}
+
+.b4bicon-stre-left::before {
+  content: $b4bicon-stre-left;
+}
+
+.b4bicon-stre-right::before {
+  content: $b4bicon-stre-right;
+}
+
+.b4bicon-stre-up::before {
+  content: $b4bicon-stre-up;
+}
+
+.b4bicon-square-corner-up-right::before {
+  content: $b4bicon-square-corner-up-right;
+}
+
+.b4bicon-network-communication::before {
+  content: $b4bicon-network-communication;
+}
+
+.b4bicon-minimal-up::before {
+  content: $b4bicon-minimal-up;
+}
+
+.b4bicon-minimal-right::before {
+  content: $b4bicon-minimal-right;
+}
+
+.b4bicon-minimal-left::before {
+  content: $b4bicon-minimal-left;
+}
+
+.b4bicon-minimal-down::before {
+  content: $b4bicon-minimal-down;
+}
+
+.b4bicon-cloud-download-93::before {
+  content: $b4bicon-cloud-download-93;
+}
+
+.b4bicon-cloud-download-95::before {
+  content: $b4bicon-cloud-download-95;
+}
+
+.b4bicon-cloud-refresh::before {
+  content: $b4bicon-cloud-refresh;
+}
+
+.b4bicon-cloud-upload-94::before {
+  content: $b4bicon-cloud-upload-94;
+}
+
+.b4bicon-cloud-upload-96::before {
+  content: $b4bicon-cloud-upload-96;
+}
+
+.b4bicon-tail-up::before {
+  content: $b4bicon-tail-up;
+}
+
+.b4bicon-square-simple-up::before {
+  content: $b4bicon-square-simple-up;
+}
+
+.b4bicon-square-simple-right::before {
+  content: $b4bicon-square-simple-right;
+}
+
+.b4bicon-square-simple-left::before {
+  content: $b4bicon-square-simple-left;
+}
+
+.b4bicon-square-simple-down::before {
+  content: $b4bicon-square-simple-down;
+}
+

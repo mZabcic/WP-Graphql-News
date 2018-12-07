@@ -1,0 +1,31 @@
+// $wpAdminBar-tablet-up: 782px;
+// $wpAdminBar-height: 46px;
+// $wpAdminBar-height-tablet-up: 32px;
+
+ .admin-bar{
+     
+   
+        
+    .header{
+        margin-top: 48px;
+        @include media(desktop large){
+            margin-top: 32px;
+        }
+    }
+}
+#wpadminbar{
+    top:0px;
+    position: fixed;
+    width: 100%;
+    left:0;
+    @include media(desktop large){
+      top:0px;
+      //position: absolute;
+    
+    }
+}
+
+
+// #wpadminbar { /* stylelint-disable-line */ 
+//   position: fixed;
+// }

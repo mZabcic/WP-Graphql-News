@@ -1,0 +1,157 @@
+/* --------------------------------
+
+b4bicons Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@import "variables";
+@import "mixins";
+
+@font-face {
+  font-family: 'b4bicons';
+  src: url('#{$b4bicon-font-path}/b4bicons.eot');
+  src: url('#{$b4bicon-font-path}/b4bicons.eot') format('embedded-opentype'),
+    url('#{$b4bicon-font-path}/b4bicons.woff2') format('woff2'),
+    url('#{$b4bicon-font-path}/b4bicons.woff') format('woff'),
+    url('#{$b4bicon-font-path}/b4bicons.ttf') format('truetype'),
+    url('#{$b4bicon-font-path}/b4bicons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+/*------------------------
+	base class definition
+-------------------------*/
+
+.b4bicon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'b4bicons';
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/*------------------------
+  change icon size
+-------------------------*/
+
+/* relative units */
+.b4bicon-sm {
+  font-size: 0.8em;
+}
+.b4bicon-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.b4bicon-16 {
+  font-size: 16px;
+}
+.b4bicon-32 {
+  font-size: 32px;
+}
+
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+
+.b4bicon-bg-square,
+.b4bicon-bg-circle {
+  padding: 0.35em;
+  background-color: $b4bicon-background-color;
+}
+
+.b4bicon-bg-circle {
+  border-radius: 50%;
+}
+
+/*------------------------------------
+  use icons as list item markers
+-------------------------------------*/
+
+.b4bicon-ul {
+  padding-left: 0;
+  list-style-type: none;
+
+  > li {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+  }
+
+  > li > .b4bicon {
+    margin-right: $b4bicon-li-margin-right;
+    line-height: inherit;
+  }
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+.b4bicon-is-spinning {
+  -webkit-animation: b4bicon-spin 2s infinite linear;
+  -moz-animation: b4bicon-spin 2s infinite linear;
+  animation: b4bicon-spin 2s infinite linear;
+}
+
+@-webkit-keyframes b4bicon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes b4bicon-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes b4bicon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+
+.b4bicon-rotate-90  {
+	@include b4bicon-rotate(90deg, 1);
+}
+
+.b4bicon-rotate-180 {
+	@include b4bicon-rotate(180deg, 2);
+}
+
+.b4bicon-rotate-270 {
+	@include b4bicon-rotate(270deg, 3);
+}
+
+.b4bicon-flip-y {
+	@include b4bicon-flip(-1, 1, 0);
+}
+.b4bicon-flip-x {
+	@include b4bicon-flip(1, -1, 2);
+}
+
+@import "icons";

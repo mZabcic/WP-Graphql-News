@@ -1,0 +1,32 @@
+section{
+    .single {
+
+
+        @include site-container();
+
+        &__container--spacing{
+            @include section-spacing('bottom');
+        }
+
+        &__container{
+            @include site-container(); 
+        }
+
+        
+
+
+
+
+        &__image{
+            @extend %bg-image;
+            min-height: 200px;
+            margin-bottom: 32px;
+            @include media(desktop large){
+                min-height: 400px;
+                margin-bottom: 48px;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,11 @@
+/* Full path due to wp-login.php is not in the theme folder */
+
+.login h1 a { /* stylelint-disable-line selector-no-type */
+  background-image: url('/wp-content/themes/wpbit4bytes/skin/public/images/bit.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 80%;
+  width: 100%;
+  height: 54px;
+  margin: 0 auto 16px;
+}

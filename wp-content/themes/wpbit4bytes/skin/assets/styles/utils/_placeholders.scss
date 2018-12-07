@@ -1,0 +1,129 @@
+%button-reset {
+  padding: 0;
+  border: 0;
+  appearance: none;
+  font-family: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+%link-transition {
+  transition: color 0.2s ease-in;
+}
+
+%heading-reset {
+  margin: 0;
+  padding: 0;
+}
+
+%paragraph-reset {
+  padding: 0;
+  margin: 0;
+}
+
+%list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%input-reset {
+  padding: 0;
+  border: none;
+  appearance: none;
+}
+
+%input-focus-shadow {
+  box-shadow: 0 0 5px $global-input-focus-color;
+}
+
+%dl-reset {
+  margin: 0;
+  padding: 0;
+}
+
+%font-icon {
+  // use !important to prevent issues with browser extensions that change fonts
+  font-family: $base-icons-font-family !important; /* stylelint-disable-line declaration-no-important */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  @include font-smoothing();
+}
+
+%site-padding {
+  padding-left: $base-content-padding;
+  padding-right: $base-content-padding;
+}
+
+%header-center{
+  text-align: center;
+  max-width:864px;
+  margin: 0 auto;
+}
+
+%listing-center{
+  max-width:864px;
+  margin: 0 auto;
+}
+
+%header-intro-width{
+  max-width:500px;
+  margin: 0 auto 0 0;
+}
+
+%section-indented{
+  max-width:864px;
+  margin: 0 auto;
+}
+
+
+%bg-image {
+  background: {
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  }
+}
+
+%img-fit{
+  height: 100%;
+  height: auto;
+  width: 100%;
+  object-position: center; 
+  object-fit: cover; 
+  border: 0;
+  vertical-align: middle;
+}
+%img-fit-contain{
+  height: auto;
+  width: 100%;
+  object-position: center; 
+  object-fit: contain; 
+  border: 0;
+  vertical-align: middle;
+}
+
+%clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+%container {
+  max-width: $base-content-width;
+  margin: 0 auto;
+}
+
+%site-container {
+  @extend %site-padding;
+  max-width: $base-content-width;
+  margin: 0 auto;
+}

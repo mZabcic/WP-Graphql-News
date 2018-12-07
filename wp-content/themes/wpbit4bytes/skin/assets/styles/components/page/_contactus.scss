@@ -1,0 +1,52 @@
+.contactus{
+    &__container{
+        @include site-container();
+    }
+    &__title{
+        
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column-reverse;
+        @include media(desktop large){
+            flex-direction: row;
+            margin: -32px;
+            @include section-spacing('left');
+            @include section-spacing('right');
+        }
+    }
+
+    &__form-title{
+        @include media(desktop large){
+            @include section-spacing('left');
+            @include section-spacing('right');
+        }
+    }
+
+    &__form{
+        flex:1;
+        @include media(desktop large){
+            margin: 32px;
+        }
+    }
+
+    &__details{
+        flex: 1;
+        @include media(desktop large){
+            margin: 32px;
+        }
+    }
+
+    &__image{
+        height: 250px;
+        @extend %bg-image;
+        margin-bottom: 32px;
+        
+        @include media(desktop large){
+            height: 400px;
+            margin-bottom: 48px;
+            
+        }
+    }
+}

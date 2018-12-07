@@ -1,0 +1,21 @@
+.listing-post-list {
+    &__item{
+
+    }
+    display: flex;
+    flex-direction: column;
+    
+
+   &--indented{
+       @extend %section-indented;
+   }
+
+    &__image{
+        height: 100%;
+        width: 100%;
+        object-position: center; 
+        object-fit: cover; 
+        border: 0;
+    }
+
+}

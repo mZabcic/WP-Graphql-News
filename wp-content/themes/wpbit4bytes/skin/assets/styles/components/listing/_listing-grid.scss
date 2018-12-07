@@ -1,0 +1,26 @@
+.listing-grid {
+    &__item{
+
+    }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+    @include media(desktop large){
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    &.is-carousel{
+        display: block;
+        @include media(desktop large){
+           
+        }
+    }
+
+    &__image{
+        height: 100%;
+        width: 100%;
+        object-position: center; 
+        object-fit: cover; 
+        border: 0;
+    }
+}

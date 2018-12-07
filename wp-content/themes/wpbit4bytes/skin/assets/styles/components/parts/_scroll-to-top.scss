@@ -1,0 +1,26 @@
+.scroll-to-top{
+    align-items: center;
+    background-color: rgba(77,77,77,.55);
+    bottom: -40px;
+    color: #fff;
+    display: flex;
+    font-size: 11px;
+    font-weight: 700;
+    height: 40px;
+    justify-content: center;
+    letter-spacing: .2px;
+    opacity: 0;
+    padding: 8px 16px;
+    position: fixed;
+    right: 0;
+    text-transform: uppercase;
+    transition-duration: .3s;
+    transition-property: bottom,background-color,opacity;
+    transition-timing-function: ease-in;
+    z-index: 88;
+    display: none;
+    &--show {
+        bottom: 0;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,30 @@
+
+.headroom {
+    transition: transform .25s ease-in-out;
+    will-change: transform;
+    //transform:translateZ(1px);
+    //position: relative; 
+}
+.headroom--top{
+    //position: fixed;
+}
+
+.headroom--pinned {
+    //transform: translateY(1px);
+
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%)
+}
+
+.slide {
+    transition: all 0.25s ease-in-out;
+}
+.slide--reset {
+    transform: translateY(0);
+}
+.slide--up {
+    transform: translateY(-100%);
+    //position:fixed;
+}

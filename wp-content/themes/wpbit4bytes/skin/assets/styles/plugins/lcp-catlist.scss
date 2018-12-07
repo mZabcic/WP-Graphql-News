@@ -1,0 +1,45 @@
+/* Plugin name: List Category Posts */
+
+.lcp_catlist{
+    $this: &;
+
+    @extend %list-reset;
+
+    &:last-child{
+        li{
+            border: none;
+        }
+    }
+    li{
+        margin-bottom: 32px;
+        border-bottom: 1px solid $ag-border-color;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        @include media(desktop large){
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+        }
+        a{
+            display: block;
+            margin-top: 16px;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+        a:first-child{
+            @include text-size(larger);
+            font-weight: $base-font-weight-bold;
+            margin-bottom: 0px;
+            padding-bottom: 0;
+            
+        }
+        
+        img{
+            @extend %img-fit;
+        }
+        &:last-child{
+            
+                border: none;
+            
+        }
+    }
+}

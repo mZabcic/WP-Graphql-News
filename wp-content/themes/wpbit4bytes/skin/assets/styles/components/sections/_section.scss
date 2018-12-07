@@ -1,0 +1,106 @@
+$sp-text-color:      $base-dark-color;
+$sp-paragraph-color: rgba($base-dark-color,0.8);
+$sp-feature-bg:      $base-light-grey-color;
+
+.section{
+    $this: &;
+
+    @include section-spacing('top');
+    @include section-spacing('bottom');
+    
+    &--text-center{
+        @extend %header-center;
+    }
+
+    &--text-indented{
+        @extend %section-indented;
+    }
+   
+
+    &--content-indented{
+        #{$this}__content{
+            @extend %section-indented;  
+        }
+    }
+
+    &--feature{
+        background: $sp-feature-bg;
+    }
+
+    &__container{
+        @include site-container();
+    }
+
+    &__item{
+        @include section-spacing('left');
+        @include section-spacing('right');
+        @include section-spacing('top');
+        @include section-spacing('bottom');
+    }
+
+    &__header{
+        //@extend %header-center;
+        @include section-spacing('bottom','header');
+    }
+    &__header-title{
+        text-align: center;
+        margin-top: 0;
+    }
+    &__header-subtitle{
+        text-align: center;
+        margin-top: 0;
+        @include text-size(larger);
+        color:$sp-paragraph-color;
+        line-height: 1.5;
+    }
+
+    &__content-wrap{
+        display: flex;
+        flex-direction: column;
+        @include media(desktop large){
+            flex-direction: row;
+            @include section-spacing('left');
+            @include section-spacing('right');
+            margin: -32px;
+        }
+    }
+
+    &__image{
+        flex: 1;
+        @include media(desktop large){
+            margin:32px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content{
+        flex: 1;
+        @include media(desktop large){
+            margin:32px;  
+        }
+    }
+
+    &__content-title{
+       // margin-top: 0;
+    }
+    &__content-text{
+        padding-bottom: 16px;
+        @include media(desktop large){
+            padding-bottom: 16px;
+        }
+    }
+
+    &__content-cta{
+        @include text-size(large);
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+
+
+}

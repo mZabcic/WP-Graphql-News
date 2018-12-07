@@ -1,0 +1,47 @@
+$ag-border-color: $base-grey-color;
+
+.article-grid {
+    $this: &;
+
+    &:last-child{
+        #{$this}__container{
+            border: none;
+        }
+    }
+
+    &__container{
+        //@include site-container();
+        border-bottom: 1px solid $ag-border-color;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        @include media(desktop large){
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+
+
+    &__image{
+        background-position: 0 0;
+        display: block;
+        height: 100%;
+    }
+    &__content{
+        
+    }
+    &__heading{
+        
+    }
+    &__heading-link{
+        
+    }
+    &__heading-date{
+        @include text-size(small);
+        display: block;
+    }
+    &__excerpt{
+        
+    }
+
+ }

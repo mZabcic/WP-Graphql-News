@@ -1,0 +1,31 @@
+//Some stuff here is out of BEM because it is used inside WP as helpers or modifiers
+
+.btn {
+  @extend %button-reset;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid;
+  cursor: pointer;
+  border-radius: 3px;
+
+  transition: {
+    property: background-color, color, border-color;
+    timing-function: ease-in;
+    duration: 0.3s;
+  }
+
+  @include button-sizes;
+  @include button-colors;
+
+  &--block {
+    display: flex;
+  }
+}

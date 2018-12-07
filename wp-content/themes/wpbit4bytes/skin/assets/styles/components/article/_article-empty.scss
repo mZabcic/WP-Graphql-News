@@ -1,0 +1,18 @@
+//If there is no items in listing
+
+ .article-empty {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 400px;
+    @include media(desktop large){
+
+    }
+    &__container{
+        @include text-size(huge);
+        font-weight: $base-font-weight-bold;
+        @include site-container();
+    }
+ }

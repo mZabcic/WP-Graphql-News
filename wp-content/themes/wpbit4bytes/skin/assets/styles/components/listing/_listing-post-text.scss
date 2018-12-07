@@ -1,0 +1,36 @@
+$lp-border-color: $base-light-grey-color;
+
+.listing-post-text{
+    &__list{
+        
+        @extend %list-reset;
+        @extend %listing-center;
+    }
+
+    &__item{
+        padding-bottom:32px;
+        border-bottom: 1px solid $lp-border-color;
+    }
+
+    &__link{
+        
+    }
+
+    &__header{
+
+    }
+
+    &__header-title{
+        @include text-size(large);
+
+    }
+
+    &__header-subtitle{
+
+    }
+
+    &__content{
+        padding-bottom: 24px;
+    }
+
+}

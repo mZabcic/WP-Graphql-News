@@ -1,0 +1,40 @@
+.article-category{
+    &__container{
+        @include site-container();
+    }
+    &__image{
+        img{
+            @extend %img-fit;
+        }
+       
+    }
+    &__content-wrap{
+        display: flex;
+        flex-direction: column;
+        @include media(desktop large){
+            flex-direction: row;
+        }
+    }
+    &__content{
+       flex: 5;
+    }
+    &__sidebar{
+        flex: 2;
+        padding-top:0;
+        @include media(desktop large){
+            padding-top: 48px;
+            margin-left: 48px;
+        }
+    }
+    &__heading{
+        
+    }
+    
+    &__heading-title{
+        
+    }
+    &__heading-desc{
+        @include text-size(large);
+    }
+
+}

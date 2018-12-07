@@ -1,0 +1,90 @@
+$label-color: $base-dark-color;
+$label-req-color: $base-primary-color;
+
+// .form {
+// }
+
+.label {
+  @include text-size(small);
+  line-height: 1.36;
+  letter-spacing: 0.3px;
+  color: $label-color;
+  margin-bottom: 10px;
+  display: block;
+
+  &--req {
+    position: relative;
+
+    &::after {
+      content: '*';
+      color: $label-req-color;
+      margin-left: 5px;
+    }
+  }
+}
+
+.field {
+  padding-bottom: $form-field-spacing;
+}
+
+
+.error{
+  color: red;
+  @include text-size(small);
+}
+
+$input-border-color: $base-silver-color;
+$input-text-color: $base-dark-color;
+$input-tap-highlight-color: rgba($base-black-color, 0);
+
+input[type="radio"]{
+  border-radius: 50px;
+}
+
+input[type="radio"],input[type="checkbox"]
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #fff;
+     color: $input-text-color;
+     top: 6px;
+     height: 24px;
+     width: 24px;
+     border: 1px solid $input-border-color;
+     //border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+input[type="radio"]:checked::before,input[type="checkbox"]:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 50%;
+     width:12px;
+     height: 12px;
+     line-height: 16px;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     content: ' ';
+     //transform: rotate(40deg);
+     background: $base-primary-color;
+
+}
+input[type="radio"]:hover
+{
+     background-color: #f7f7f7;
+}
+input[type="radio"]:checked
+{
+     background-color: #f1f1f1;
+}
+label
+{
+     font: 300 16px/1.7 'Open Sans', sans-serif;
+     color: #666;
+     cursor: pointer;
+} 

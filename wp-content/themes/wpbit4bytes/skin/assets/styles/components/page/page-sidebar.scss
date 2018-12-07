@@ -1,0 +1,43 @@
+.page-sidebar{
+    &__container{
+        @include site-container();
+        
+    }
+
+    &__title{
+        margin-top: 0; 
+    }
+
+    &__image{
+        margin-bottom: 16px;
+        height: 315px;
+        @extend %bg-image;
+        @include media(desktop large){
+            margin-bottom: 32px;
+            height: 400px;
+        }
+    }
+
+    &__content-wrap{
+        display: flex;
+        flex-direction: column;
+        @include media(desktop large){
+            flex-direction: row;
+            margin: 0 -32px;
+        }
+    }
+
+    &__main{
+        flex: 3;
+        @include media(desktop large){
+            margin:  0 32px;
+        }
+    }
+
+    &__sidebar{
+        flex: 2;
+        @include media(desktop large){
+            margin: 0 32px;
+        }
+    }
+}

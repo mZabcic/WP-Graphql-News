@@ -1,0 +1,30 @@
+$scn-link-color:       $base-black-color;
+$scn-link-hover-color: $base-black-color;
+$scn-link-opacity:     0.75;
+
+.slick-custom-navigation{
+    display: flex;
+    margin: 24px 0 0 0 ;
+    justify-content: center;
+    @include media(desktop large){
+        margin: 32px 0 0 0 ;
+    }
+
+
+    &__next-link,
+    &__prev-link,
+    &__number
+    {
+        display: inline-flex;
+        @include text-size(largest);
+        //line-height: 1;
+        color: $scn-link-color;
+        opacity: $scn-link-opacity;
+        padding: 8px 24px;
+        transition: opacity 0.3s ease-in;
+        &:hover{
+            color: $scn-link-hover-color;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+$menu-toggler-active-color: $base-black-color;
+$menu-toggler-inactive-color: $base-black-color;
+
+.menu-toggler{
+    min-height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    span {
+        display: block;
+        background: $menu-toggler-inactive-color;
+        width: 24px;
+        height: 2px;
+        border-radius: 3px;
+        transition: .25s margin .25s, .25s transform;
+    }
+    span:nth-child(1) { margin-bottom: 6px; }
+    span:nth-child(3) { margin-top: 6px; }
+    &.is-active{
+        color: $menu-toggler-active-color;
+        position: fixed;
+        right: 16px;
+        top: 32px;
+        z-index: 111;
+        width: auto;
+        left: auto;
+        span {
+            transition: .25s margin, .25s transform .25s;
+            background: $menu-toggler-active-color;
+        }
+        span:nth-child(1) {
+            margin-top: 6px;
+            margin-bottom: -2px;
+        }
+        
+        span:nth-child(1), span:nth-child(2) {
+            transform: rotate(45deg);
+        }
+        
+        span:nth-child(3) {
+            margin-top: -2px;
+            transform: rotate(135deg);
+        }
+    }
+}

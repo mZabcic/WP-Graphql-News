@@ -1,0 +1,53 @@
+.is-carousel{
+    .post-grid{
+        @include media(desktop large){
+
+        }
+    }
+}
+.post-grid{
+    margin-top: 0px;
+    @include media(desktop large){
+        margin-top: 0;
+    }
+
+    &__image{
+        img{
+            @extend %img-fit;
+        }
+       
+    }
+
+    &__heading{
+              
+        @include media(desktop large){
+            @include text-size(biggest);
+            
+        }
+    }
+    &__heading-title{  
+        margin-bottom: 0;
+        line-height: 1.2; 
+        @include text-size(largest);    
+        @include media(desktop large){
+            @include text-size(large);   
+        }
+    }
+
+    &__excerpt{
+        @include text-size(default);
+        @include media(desktop large){
+            @include text-size(default);
+        }
+    }
+    
+
+    &__date{
+        @include text-size(default);
+        color: $base-grey-color;
+        display: block;
+        margin-top: $base-content-padding/2;
+        margin-bottom: $base-content-padding;
+        font-weight: $base-font-weight-normal;
+    }
+}

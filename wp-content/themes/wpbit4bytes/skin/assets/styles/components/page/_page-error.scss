@@ -1,0 +1,35 @@
+.page-error{
+    &__container{
+        @include site-container();
+        display: flex;
+        flex-direction: column;
+        @include section-spacing('bottom');
+        @include section-spacing('top');
+        max-width:500px;
+    }
+
+    &__heading{
+        text-align: center;
+    }
+
+    &__heading-title{
+        @include text-size(huge);
+        margin-bottom: 0;
+    }
+
+    &__heading-text{
+        @include text-size(largest);
+        margin: 0;
+    }
+
+    &__content{
+        @include text-size(large);
+    }
+
+    &__search-text{
+        text-align: center;
+    }
+
+    
+
+}

@@ -1,0 +1,120 @@
+$header-background-color:        $base-white-color;
+$header-mobile-background-color: $base-white-color;
+
+.header {
+    $this: &;
+    background: $header-background-color;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+    padding: 16px 0;
+    min-height: 80px;
+    &--fixed {
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+    &__container{
+        @include site-container();
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__logo-link{
+        display: block;
+        flex: 0 1 auto;
+        width: 50px;
+        line-height: 48px;
+        &.is-mobile{
+           // position: fixed;
+           // top: 16px;
+           // left: 16px;
+          
+           
+           // z-index: 11;
+        }
+    }
+    &__logo-img{
+        vertical-align: middle;
+        width: 100%;
+    }
+    &__nav{
+        
+        display: flex;
+        width: 100%;
+        transition: all .3s ease-in-out;
+        flex-direction: column;
+        @include media(small mobile tablet){
+            position: fixed;
+            height: 100vh;
+            padding: 48px;
+            padding-top: 96px;
+            opacity: 0;
+            visibility: hidden;
+            top: 0;
+            left: 0;
+            background: $header-mobile-background-color;
+            top: 0px;
+            left: 0px;
+            height: 100vh;
+            right: 0;
+            z-index: 2;
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+        @include media(desktop large){
+            position: relative;
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            opacity: 1 ;
+            height: auto;
+        }
+        &.is-mobile{
+    
+            opacity: 1 ;
+            visibility: visible;
+        }
+    }
+
+    &__nav-mobile-menu-trigger{
+        flex: 1 1 auto;
+        align-content:center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: relative;
+        @include media(desktop large){
+            display: none;
+        }
+    }
+
+    &__search-form{
+
+    }
+
+    &__search-form-field{
+        display: flex;
+        position: relative;
+        @include media(desktop large){
+            display: inline-flex;
+        }
+        i{
+            position: absolute;
+            right: 16px;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__contact{
+        display: block;
+        color: $base-grey-color;
+        margin-top: $base-content-padding*3;
+        font-weight: 700;
+        @include media(desktop large){
+            display: none;
+        }
+    }
+}

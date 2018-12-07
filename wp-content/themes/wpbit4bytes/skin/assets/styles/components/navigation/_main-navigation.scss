@@ -1,0 +1,71 @@
+.main-navigation{
+    @extend %list-reset;
+    display: flex;
+    flex-direction: column;
+    //margin-bottom: 32px;
+    @include media(desktop large){
+        align-items: center;
+    }
+    
+    
+    @include media(desktop large){
+        flex: 1 1 auto;
+        flex-direction: row;  
+        justify-content: flex-end; 
+        margin-bottom: 0; 
+        margin-right: 16px;
+    }
+    &__item{
+        padding: 8px 0;
+        @include media(desktop large){
+            padding: $base-content-padding/2 $base-content-padding/2;
+        }
+    }
+    &__link{
+        display: block;
+        color:$base-black-color;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        //display: inline-block;
+        cursor: pointer;
+        width: fit-content;
+        line-height: 1.5;
+        font-size: 24px;
+        font-weight: bold;
+        @include text-size(largest);
+        @include media(desktop large){
+            color: $base-black-color;
+            @include text-size(default);
+        }
+
+       // @include header-navigation-colors();
+
+        &:hover{
+           
+        }
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: -1px;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $base-black-color;
+            content: "";
+            border-bottom: 1px solid $base-black-color;
+            -webkit-transform: translate3d(-101%,0,0);
+            transform: translate3d(-101%,0,0);
+            -webkit-transition: -webkit-transform .8s cubic-bezier(.11,.7,0,1);
+            transition: -webkit-transform .8s cubic-bezier(.11,.7,0,1);
+            transition: transform .8s cubic-bezier(.11,.7,0,1);
+            transition: transform .8s cubic-bezier(.11,.7,0,1),-webkit-transform .8s cubic-bezier(.11,.7,0,1);
+        }
+        &:hover:after {
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+    }
+
+  
+}

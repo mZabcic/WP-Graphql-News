@@ -1,0 +1,77 @@
+.newsletter{
+    @include section-spacing('top');
+    @include section-spacing('bottom');
+    &__container{
+        @include site-container();
+    }
+    &__header{
+        text-align: center;
+    }
+
+    &__title{
+        margin-top: 0;
+    }
+
+    &__content{
+        text-align: center;
+        @include media(desktop large){
+            @include section-spacing('left','huge');
+            @include section-spacing('right','huge');
+        }
+        
+    }
+    &__email{
+        
+        margin: 0 auto;
+        @include media(desktop large){
+            width: 50%;
+        }
+    }
+    &__gdpr{
+        text-align: left;
+        margin-bottom:24px;
+        @include text-size(smaller);
+        
+        @include media(desktop large){
+            text-align: center;
+            margin-left: 0;
+            margin-bottom:24px;
+        }
+        label{
+            margin-left: 32px;
+            display: block;
+             
+            @include media(desktop large){
+                text-align: center;
+                
+            }
+        }
+        input[type="checkbox"]{
+            margin-left: -32px;
+            @include media(desktop large){
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__cta{
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+// Mailchimp
+.mc4wp-alert {
+    text-align: center;
+    &.mc4wp-error{
+        color: $base-red-color;
+    }
+    &.mc4wp-notice{
+        color: green;
+    }
+    &.mc4wp-success{
+        color: green;
+    }
+   
+}
+  
