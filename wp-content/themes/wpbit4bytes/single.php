@@ -6,7 +6,6 @@
  */
 
 get_header();
-echo "Template: single";
 if ( have_posts() ) {
   while ( have_posts() ) {
     the_post();

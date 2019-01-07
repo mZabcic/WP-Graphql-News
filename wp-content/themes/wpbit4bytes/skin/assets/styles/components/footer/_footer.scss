@@ -44,8 +44,11 @@ $footer-copright-bg-color: $base-grey-color;
     flex: 1;
   }
   &__logo-link{
-      width:128px;
+      width:50px;
       display: block;
+      img {
+      width: 100%;
+      }
       @include media(desktop large){
 
       }

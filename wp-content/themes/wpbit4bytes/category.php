@@ -40,12 +40,7 @@ get_header();
         </div>
         <div class="article-category__sidebar">
             <?php  
-                get_sidebar('page');
-
-                echo do_shortcode('[catlist taxonomy="profilerole" post_type="profile" numberposts="2" ]');
-                //https://github.com/picandocodigo/List-Category-Posts/wiki/More-parameters-you-can-use
-                echo do_shortcode('[catlist catlink="yes" posts_morelink="Read more about this post" template="list" thumbnail="yes" excerpt="full" thumbnail_size="listing" numberposts="2" ]');
-            
+              get_template_part( 'template-parts/sections/latest-news' );  
             ?>
         </div>
     </div>

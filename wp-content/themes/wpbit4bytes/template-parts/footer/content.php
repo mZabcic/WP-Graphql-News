@@ -22,14 +22,10 @@ $header_logo_info = $blog_name . ' - ' . $blog_description;
       </p>
     </div>
     <div class="footer__menu-primary">
-    <?php
-       echo esc_html( $menu->bem_menu( 'header_main_nav', 'footer-navigation' ) );
-     ?>
+   
     </div>
     <div class="footer__menu-secondary">
-    <?php
-       echo esc_html( $menu->bem_menu( 'header_main_nav', 'footer-navigation' ) );
-     ?>
+    
     </div>
     <div class="footer__menu-third">
     <?php
@@ -42,25 +38,11 @@ $header_logo_info = $blog_name . ' - ' . $blog_description;
 <div class="footer-copyright">
 <div class="footer-copyright__container">
    <div class="footer-copyright__text">
-   © 2007 – 2018 BIT4BYTES
+   © 2018 Mislav Žabčić
    </div>
    <div class="footer-copyright__social">
       <ul class="footer-copyright__social-list">
-        <li class="footer-copyright__social-item">
-          <a href="#" class="footer-copyright__social-link">
-            <i class="b4bicon b4bicon-logo-fb-simple"></i>
-          </a>
-        </li>
-        <li class="footer-copyright__social-item">
-          <a href="#" class="footer-copyright__social-link">
-            <i class="b4bicon b4bicon-logo-linkedin"></i>
-          </a>
-        </li>
-        <li class="footer-copyright__social-item">
-          <a href="#" class="footer-copyright__social-link">
-            <i class="b4bicon b4bicon-logo-instagram"></i>
-          </a>
-        </li>
+        
       </ul>
    </div>
 </div>

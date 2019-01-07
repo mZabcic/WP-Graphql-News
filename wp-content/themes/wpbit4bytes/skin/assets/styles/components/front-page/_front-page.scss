@@ -1,0 +1,6 @@
+.front-page {
+    display: flex;
+    flex-direction: row;
+    @include site-container();
+
+}

@@ -1,6 +1,14 @@
 .article-category{
     &__container{
         @include site-container();
+
+        &--no-border {
+            .article-grid__container {
+                border-bottom: none;
+            }
+
+
+        }
     }
     &__image{
         img{
@@ -35,6 +43,12 @@
     }
     &__heading-desc{
         @include text-size(large);
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: $base-content-padding;
     }
 
 }

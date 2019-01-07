@@ -1,0 +1,18 @@
+.latest {
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+    padding: $base-content-padding;
+    position: sticky;
+    top: 124px;
+    align-self: flex-start;
+
+    .article-grid__container {
+        padding-bottom: 0px!important;
+        margin-bottom: 0px!important;
+    }
+
+    .article-category__title {
+        border-bottom: 1px solid #71787C;
+    }
+}
+
+

@@ -12,14 +12,15 @@ $image  = $images->get_post_image( 'full_width' );
 ?>
 
 <!-- Single Content Section -->
-<section class="single-post" id="<?php echo esc_attr( $post->ID ); ?>">
-  <div class="single-post__image" data-normal="<?php echo esc_url( $image['image'] ); ?>"></div>
+<section class="single-news" id="<?php echo esc_attr( $post->ID ); ?>">
   <header>
-    <h1 class="single-post__title">
-      <?php the_title(); ?>
-    </h1>
+    <div class="single-news__background" style="background-image: url('<?php echo esc_url( $image['image'] ); ?>');">
+      <h1 class="single-news__title">
+        <?php the_title(); ?>
+      </h1>
+    </div>
   </header>
-  <div class="single-post__content content-style content-media-style">
+  <div class="single-news__content content-style content-media-style">
     <?php the_content(); ?>
   </div>
   <?php require locate_template( 'template-parts/parts/google-rich-snippets.php' ); ?>

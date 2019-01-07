@@ -9,27 +9,40 @@ get_header();
 
 
 
+?>
+<section class="front-page">
+<div class="front-page__main">
+<?php
+
+$categories = get_terms( 
+  'category', 
+  array('parent' => 0)
+);
 
 
 
-
-
-
-
+foreach($categories as $category) {
 // Listing Grid Blog Post horizontal Indented
 $section_args = array(
   'post_type'   => 'post',
   'post_status' => 'publish',
   'numberposts' => 10,
-  'featured'    => true,
-  'class-list'  => 'listing-post-list--indented',
-  'section-title' => __('Najnovije vijest', 'news'),
-  'section-subtitle'=> __('Aktualne novosti iz svih sfera života', 'news'),
+  'category_name' => $category->slug
 
 );
-require locate_template( 'template-parts/sections/listing-post-list.php' );
+//require locate_template( 'template-parts/sections/listing-post-list.php' );
+require locate_template( 'template-parts/sections/listing-front-page.php' );
+}
+
+?>
+</div>
+<aside>
+ <?php get_template_part( 'template-parts/sections/latest-news' );  ?>
+</aside>
 
 
+</section>
+<?php
 
 
 
