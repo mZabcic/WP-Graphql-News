@@ -11,7 +11,7 @@ $ag-border-color: $base-grey-color;
 
     &__container{
         //@include site-container();
-        border-bottom: 1px solid $ag-border-color;
+        //border-bottom: 1px solid $ag-border-color;
         padding-bottom: 24px;
         margin-bottom: 24px;
         @include media(desktop large){

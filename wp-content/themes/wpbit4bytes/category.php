@@ -16,6 +16,7 @@ get_header();
             <h1 class="article-category__title"><?php single_cat_title(); ?></h1>
             <p class="article-category__desc"><?php echo category_description(); ?></p>
         </div>
+        <div class="article-category__grid">
         <?php if (function_exists('z_taxonomy_image')){ ?>
             <div class="article-category__image">
                 <?php z_taxonomy_image(NULL, 'listing-grid'); ?>
@@ -37,6 +38,7 @@ get_header();
 
             };
             ?>
+        </div>
         </div>
         <div class="article-category__sidebar">
             <?php  

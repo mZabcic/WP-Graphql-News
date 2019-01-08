@@ -124,6 +124,10 @@ class Main {
     remove_filter('wp_head', 'rel_canonical');
     $this->loader->add_filter('wp_head',$install, 'fsp_rel_canonical');
     $this->loader->add_filter( 'wpseo_canonical',$install, 'wpseo_canonical_exclude' );
+
+
+    $this->loader->add_filter('comment_form_default_fields',$install, 'remove_comment_fields');
+    $this->loader->add_filter('pre_get_posts',$install, 'change_wp_search_size'); 
   }
 
   /**
@@ -231,6 +235,8 @@ class Main {
     // Pagination.
     $this->loader->add_filter( 'next_posts_link_attributes', $pagination, 'pagination_link_next_class' );
     $this->loader->add_filter( 'previous_posts_link_attributes', $pagination, 'pagination_link_prev_class' );
+
+
   }
 
   /**

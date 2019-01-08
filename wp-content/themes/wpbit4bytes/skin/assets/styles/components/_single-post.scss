@@ -11,6 +11,7 @@
         display: flex;
         align-items: flex-end;
         box-shadow: inset 0 -152px 126px -52px #a6abab;
+        margin-bottom: $base-content-padding;
         
         h1 {
             margin-bottom: 8px;
@@ -18,3 +19,21 @@
         }
     }
 }
+
+
+
+.comment {
+    padding: $base-content-padding;
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+    margin-bottom: $base-content-padding/2;
+}
+
+.comment-reply-link {
+    margin-bottom: $base-content-padding/2;
+}
+
+ol {
+    list-style-type: none;
+    -webkit-margin-before: 0px;
+    -webkit-padding-start: 0px;
+  }

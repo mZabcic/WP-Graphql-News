@@ -8,6 +8,8 @@
     &__image{
         display: block;
         flex: 1;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     
     &__container{

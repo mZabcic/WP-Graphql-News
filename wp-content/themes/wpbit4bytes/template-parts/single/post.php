@@ -23,5 +23,7 @@ $image  = $images->get_post_image( 'full_width' );
   <div class="single-news__content content-style content-media-style">
     <?php the_content(); ?>
   </div>
+  
+  <?php comments_template(); ?>
   <?php require locate_template( 'template-parts/parts/google-rich-snippets.php' ); ?>
 </section>

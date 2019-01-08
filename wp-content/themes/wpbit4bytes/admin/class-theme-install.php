@@ -308,6 +308,27 @@ class ThemeInstall {
 
 
 
+//add_filter('comment_form_default_fields', 'remove_comment_fields');
+function remove_comment_fields($fields)
+{
+if(isset($fields['url']))
+unset($fields['url']);
+unset($fields['email']);
+return $fields;
+}
+
+
+function change_wp_search_size($query) {
+    if ( $query->is_search ) // Make sure it is a search page
+        $query->query_vars['posts_per_page'] = -1; // Change 10 to the number of posts you would like to show
+
+    return $query; // Return our modified query variables
+}
+//add_filter('pre_get_posts', 'change_wp_search_size'); 
+
+
+
+
 //add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box' );
 
 }

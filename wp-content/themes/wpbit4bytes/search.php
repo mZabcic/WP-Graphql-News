@@ -62,30 +62,7 @@ if ( have_posts() ) {
 
 };
 ?>
-<div class="search__load-more">
-    <a href="#" class="btn ">Load More</a>
-</div>
 
-<div id="response-to-this">
-'posts' => json_encode( $wp_query->query_vars ), // everything about your loop is here
-		'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
-		'max_page' => $wp_query->max_num_pages
-</div>
-
-<div data-action="searchloadmore" data-query="{paged: 1}" 
-
-     data-current-page="<?php echo get_query_var( 'paged' ) ? get_query_var('paged') : 1?>" 
-     data-max-page="<?php  echo $wp_query->max_num_pages ?>"
-     data-query="<?php json_encode( $wp_query->query_vars )?>"
-     data-responseto="#response-to-this" class="btn btn--color-load-more button button-loadmore style2 js-bt-loading js-bt-loadmore">
-      <span class="txt-default">Load More</span>
-      <span class="txt-loading">Loading...</span>
-      <div class="bt-load"></div>
-      <div class="bt-load"></div>
-      <div class="bt-load"></div>
-      <div class="bt-load"></div>
-      <div class="bt-load"></div>
-</div>
 </div>
 <?php
 get_footer();

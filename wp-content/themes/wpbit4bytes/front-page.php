@@ -26,7 +26,7 @@ foreach($categories as $category) {
 $section_args = array(
   'post_type'   => 'post',
   'post_status' => 'publish',
-  'numberposts' => 10,
+  'numberposts' => 4,
   'category_name' => $category->slug
 
 );

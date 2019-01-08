@@ -24,7 +24,6 @@ $category = get_category_by_slug( $section_args["category_name"] );
                 get_template_part( 'template-parts/listing/articles/grid' );
             }
 
-            the_posts_pagination();
 
             } else {
 
