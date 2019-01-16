@@ -128,6 +128,7 @@ class Main {
 
     $this->loader->add_filter('comment_form_default_fields',$install, 'remove_comment_fields');
     $this->loader->add_filter('pre_get_posts',$install, 'change_wp_search_size'); 
+    $this->loader->add_filter( 'rest_allow_anonymous_comments',$install, 'allow_nologin_api' );
   }
 
   /**

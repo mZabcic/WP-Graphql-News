@@ -1,0 +1,36 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.wp-block-cgb-block-picture-with-button-block {
+  background: #dedede;
+  border: 0.2rem solid #292929;
+  color: #292929;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem;
+  position: relative; }
+
+.inner-block-wrapper {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  z-index: 10;
+  height: 100%;
+  left: 0px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .inner-block-wrapper .editor-inner-blocks {
+    padding: 16px; }

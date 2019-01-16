@@ -320,14 +320,16 @@ return $fields;
 
 function change_wp_search_size($query) {
     if ( $query->is_search ) // Make sure it is a search page
-        $query->query_vars['posts_per_page'] = -1; // Change 10 to the number of posts you would like to show
+        $query->query_vars['posts_per_page'] = 100; // Change 10 to the number of posts you would like to show
 
     return $query; // Return our modified query variables
 }
 //add_filter('pre_get_posts', 'change_wp_search_size'); 
 
 
-
+function allow_nologin_api() {
+   return true;
+}
 
 //add_filter( 'rwmb_meta_boxes', 'your_prefix_get_meta_box' );
 
